@@ -1,0 +1,104 @@
+*{
+	box-sizing: border-box;
+}
+.header{
+	margin-top: 120px;
+}
+.header h1{
+	text-align: center;
+	font-weight: normal;
+
+}
+.header h2{
+	text-align: center;
+	font-weight: 900;
+	text-transform: uppercase;
+}
+.block{
+	margin:80px 25%;
+	width: 1000px;
+	display: inline-block;
+}
+.video{
+	margin-right:  30px;
+}
+.video, .form{
+	text-align:center;
+	vertical-align: top;
+	display: inline-block;
+
+}
+.form{
+	height: 300px;
+	text-align: center;
+	padding-left: 20px;
+	padding-right: 20px;
+	border:5px solid blue;
+}
+.form input{
+	margin-bottom: 10px;
+	height: 50px;
+	width: 300px;
+	display: block;
+
+}
+.form p{
+	font-size: 18px;
+	font-weight: 900;
+}
+.takeit{
+	font-size: 18px;
+	border:none;
+	height: 30px;
+	width: 300px;
+	background-color: blue;
+	color: white;
+	padding-top: 30px;
+	padding-left: 50px;
+	padding-right:50px;
+	padding-bottom: 45px;
+}
+.features{
+	padding: 30px;
+	text-align: center;
+}
+.features h1{
+	font-size: 30px;
+	text-transform: uppercase;
+}
+.blockf{
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+.feach{
+	margin: 10px 50px;
+	display: inline-block;
+
+}
+.takeit2{
+	margin: 0 auto;
+	display: block;
+	font-size: 18px;
+	border:none;
+	height: 30px;
+	width: 300px;
+	background-color: blue;
+	color: white;
+	padding-top: 30px;
+	padding-left: 50px;
+	padding-right:50px;
+	padding-bottom: 45px;
+}
+.clients{
+	margin-top: 50px;
+	text-align: center;
+}
+.row{
+	display: block;
+
+}
+.col{
+	margin-right: 20px;
+	margin-bottom: 20px;
+	display: inline-block;
+}
