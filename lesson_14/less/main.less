@@ -45,6 +45,11 @@ html{
 body{
 	.reg();
 }
+button, input{
+	&:focus{
+		outline: none;
+	}
+}
 .button{
 	font-size:1.2rem;
 	margin: 0 auto;
@@ -54,6 +59,11 @@ body{
 	border-radius: 8px;
 	border:none;
 	text-transform: uppercase;
+	transition: all 0.2s;
+	&:hover{
+		cursor: pointer;
+		background-color: darken(@btn-color, 5%);
+	}
 }
 /* typography */
 section{
@@ -65,6 +75,9 @@ section{
 		text-align:right;
 	}
 	&-link{
+		&:hover{
+			text-decoration:none;
+		}
 		.bold();
 		text-decoration: none;
 		height:7rem;
@@ -96,6 +109,7 @@ section{
 		margin-top: 10rem;
 		/*Главный заголовок*/
 		h1{
+			margin-top:0;
 			line-height:4.5rem;
 			margin-bottom: 4rem;
 			.bold();
@@ -171,6 +185,33 @@ section{
 			margin-top:1.5rem;
 			display:block;
 		}
+	}
+}
+@media (max-width: 991px){
+
+	.main{
+		background-position: top right; 
+	}
+	.phone-block{
+		text-align:right;
+	}
+	.main-title{
+		padding-bottom: 3rem;
+		text-align:center;
+	}
+	.main-content{
+		margin-top:3rem;
+	}
+}
+@media(max-width:767px){
+	.header{
+		text-align:center
+	}
+	.wrap-block{
+		text-align:center;
+	}
+	.phone-block{
+		text-align:center;
 	}
 }
 
