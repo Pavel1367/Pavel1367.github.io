@@ -1,31 +1,4 @@
-/*Media*/
-@media (max-width: 991px){
 
-	.main{
-		background-position: top right; 
-	}
-	.phone-block{
-		text-align:right;
-	}
-	.main-title{
-		padding-bottom: 3rem;
-		text-align:center;
-	}
-	.main-content{
-		margin-top:3rem;
-	}
-}
-@media(max-width:767px){
-	.header{
-		text-align:center
-	}
-	.wrap-block{
-		text-align:center;
-	}
-	.phone-block{
-		text-align:center;
-	}
-}
 /* Fonts */
 @font-face {
 	font-family: 'ProximaNova_Bl';
@@ -97,9 +70,16 @@ button, input{
 section{
 	padding:10rem 0;
 }
+.section-header{
+	margin:2rem 0 10rem;
+	.bold();
+	font-size: 3.6rem;
+	text-align:center;
+}
 /* main */
 .phone{
 	&-block{
+
 		text-align:right;
 	}
 	&-link{
@@ -115,6 +95,9 @@ section{
 		color: #1a1820;
 		font-weight: 900;
 	}
+.click-active{
+	outline:none;
+}
 	
 
 }
@@ -215,8 +198,83 @@ section{
 		}
 	}
 }
+/*Оформление преимуществ*/
+.features{
+	&-block{
+		text-align:center;
+		h3{
+			font-size: 2rem;
+			.bold();
+			margin-bottom:3rem;
+		}
+		p{
+			display:inline-block;
+			width:80%;
+			font-size: 1.4rem;
+		}
+	}
+	&-img {
+		height:8rem;
+		margin-bottom:3rem;
+		img{
+			display:block;
+			margin:0 auto;
+		}
+	}
+}
+.slick-active{
+	outline:none;
 
+}
+.arrow{
+	transform:translateY(-50%);
+	z-index: 99;
+	width:2rem;
+	height:2rem;
+	border:none;
+	position: absolute;
+	background-size: 70%;
+	top:50%;
+	
+}
+.prev{
+	background:url(../img/icons/left-arrow.svg) center no-repeat;
+	background-size:70%;
+	left:0;
+}
+.next{
+	background: url(../img/icons/right-arrow.svg) center no-repeat;
+	right:0;
+	background-size:70%;
+}
+/*Media*/
+@media (max-width: 991px){
 
+	.main{
+		background-position: top right; 
+	}
+	.phone-block{
+		text-align:center;
+	}
+	.main-title{
+		padding-bottom: 3rem;
+		text-align:center;
+	}
+	.main-content{
+		margin-top:3rem;
+	}
+}
+@media(max-width:767px){
+	.header{
+		text-align:center
+	}
+	.wrap-block{
+		text-align:center;
+	}
+	.phone-block{
+		text-align:center;
+	}
+}
 
 
 
