@@ -169,6 +169,7 @@ section{
 	}
 		/*Поле для ввода*/
 		&-input{
+			border-radius: 5px;
 			margin: 2rem 0; 
 			display:block;
 			width: 100%;
@@ -246,6 +247,48 @@ section{
 	background: url(../img/icons/right-arrow.svg) center no-repeat;
 	right:0;
 	background-size:70%;
+}
+/*Оформление модальных окон*/
+.popup{
+	textarea{
+		width: 100%;
+		border:1px solid grey;
+		outline:none;
+	}
+	display:none;
+	position:fixed;
+	left:0;
+	top:0;
+	bottom: 0;
+	right:0;
+	width:100%;
+	height:100%;
+	z-index:9;
+	background-color: rgba(0,0,0,0.5);
+	&-form{
+		padding:0;
+	}
+	&-close{
+		color:@light;
+		position:absolute;
+		top: -2rem;
+		right: -2rem;
+		width:2rem;
+		text-align:center;
+		border:none;
+		background-color: transparent;
+		font-size:3rem;
+
+	}
+	&-content{
+		position:fixed;
+		background-color:@light;
+		top:10%;
+		padding: 4rem 6rem;
+		left:50%;
+		transform:translateX(-50%);
+		text-align:center;
+	}
 }
 /*Media*/
 @media (max-width: 991px){

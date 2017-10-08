@@ -143,6 +143,7 @@ section {
   font-size: 1.9rem;
 }
 .main-form-input {
+  border-radius: 5px;
   margin: 2rem 0;
   display: block;
   width: 100%;
@@ -213,6 +214,48 @@ section {
   background: url(../img/icons/right-arrow.svg) center no-repeat;
   right: 0;
   background-size: 70%;
+}
+/*Оформление модальных окон*/
+.popup {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.popup textarea {
+  width: 100%;
+  border: 1px solid grey;
+  outline: none;
+}
+.popup-form {
+  padding: 0;
+}
+.popup-close {
+  color: #ffffff;
+  position: absolute;
+  top: -2rem;
+  right: -2rem;
+  width: 2rem;
+  text-align: center;
+  border: none;
+  background-color: transparent;
+  font-size: 3rem;
+}
+.popup-content {
+  position: fixed;
+  background-color: #ffffff;
+  top: 10%;
+  padding: 4rem 6rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  text-align: center;
 }
 /*Media*/
 @media (max-width: 991px) {
