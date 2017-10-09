@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>17</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<button class="btn">Вы действительно хотите удалить файл?</button>
+	<div class="popup">
+		<button class="btn-close">&times</button>
+		<button></button>
+		<button></button>
+	</div>
+	<script src="js/jq.js"></script>
+	<script>
+		$(document).ready(function(){
+		$('.btn').on('click', function(event){
+			event.preventDefault();
+			$('.popup').fadeIn();
+		});
+		$('.btn-close').on('click', function(event) {
+			event.preventDefault();
+			$('.popup').fadeOut();
+		</script>
+</body>
+</html>
