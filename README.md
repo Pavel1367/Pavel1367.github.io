@@ -7,5 +7,8 @@
 [Урок 13](https://pavel1367.github.io/lesson_13/)
 [Урок 15](https://pavel1367.github.io/lesson_15/)
 [Урок 16](https://pavel1367.github.io/lesson_16/)
+[Урок 17](https://pavel1367.github.io/lesson_17/)
+[Урок 18](https://pavel1367.github.io/lesson_18/)
+[Урок 18-табы](https://pavel1367.github.io/lesson-tabs/)
 
 
