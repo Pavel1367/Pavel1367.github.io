@@ -1,0 +1,87 @@
+body{
+	background: url(../img/Layer2.png) no-repeat center;
+}
+.container{
+	
+}
+
+.nav-tabs{
+	border:none;
+	margin-top:1px;
+	margin-left:300px;
+
+	
+	
+}
+.nav-tabs > li > a.active{
+	border-radius: 5px;
+
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
+
+	background-color: #03a4d8;
+	border:none;
+	color:white;
+	font-size: 15px;
+}
+.nav-tabs >li>a{
+	background-color: white;
+}
+li.active{
+	background-color: #03a4d8;
+}
+.login{
+	margin-right:5px;
+}
+.registration-form{
+	z-index:10;
+	padding: 65px 40px;
+	background-color: black;
+	z-index:99;
+	display:block;
+	border: 20px solid #03a4d8;
+	border-radius:10px;
+	margin: 0 auto;
+	width: 600px;
+	height: 420px;
+}
+.form-input{
+	color:white;
+	font-size:20px;
+	padding:25px 20px;
+	margin-bottom:30px !important;
+	border:none;
+	border-radius:10px;
+	margin: 0 auto;
+	height:60px;
+	width:480px;
+	background-color: #1a1919;
+	display: block;
+}
+.forgotpass{
+	margin-left:20px;
+	display:block;
+	color:red;
+
+}
+.remind{
+	margin-left:20px;
+	margin-top:60px;
+	color:grey;
+}
+.remind label{
+	margin-left:10px;
+	margin-top:-5px;
+}
+button{
+	position: absolute;
+	margin-left:23%;
+	margin-top:-30px;
+	border:none;
+	color:white;
+	font-size: 15px;	
+	background-color: #b11802;
+	padding:10px 20px;
+	min-width: 120px;
+	max-width: 190px;
+}
