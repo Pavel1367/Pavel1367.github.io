@@ -31,6 +31,7 @@
 }
 
 /* Colors */
+@problems-color:#e8e8e8;
 @border-input:#ddd;
 @btn-color: #fcb303;
 @icons: #46b814;
@@ -67,6 +68,34 @@ button, input{
 	}
 }
 /* typography */
+/*Оформление форм*/
+.form{
+	/*Поле для ввода*/
+		&-input{
+			border-radius: 5px;
+			margin: 2rem 0; 
+			display:block;
+			width: 100%;
+			border:1px solid @border-input;
+			padding: 1.5rem;
+		}
+		/*Подписи к полям*/
+		label{
+			font-size: 1.3rem;
+			padding:0.5rem;
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%) translateY(-50%);
+			background-color: @light;
+		}	
+		/*Кнопка отправить заявку*/
+		&-btn{
+			display:block;
+			height:5.5rem;
+			width:100%;
+			font-size: 1.6rem;
+		}
+}
 section{
 	padding:10rem 0;
 }
@@ -176,31 +205,7 @@ section{
 				font-size: 1.9rem;
 		}
 	}
-		/*Поле для ввода*/
-		&-input{
-			border-radius: 5px;
-			margin: 2rem 0; 
-			display:block;
-			width: 100%;
-			border:1px solid @border-input;
-			padding: 1.5rem;
-		}
-		/*Подписи к полям*/
-		label{
-			font-size: 1.3rem;
-			padding:0.5rem;
-			position: absolute;
-			left: 50%;
-			transform: translateX(-50%) translateY(-50%);
-			background-color: @light;
-		}	
-		/*Кнопка отправить заявку*/
-		&-btn{
-			display:block;
-			height:5.5rem;
-			width:100%;
-			font-size: 1.6rem;
-		}
+		
 		/*Подпись под формой*/
 		small{
 			margin-top:1.5rem;
@@ -354,7 +359,212 @@ section{
 		}
 	}
 }
+/*Секция с отзывами*/
+.feedback{
+	position:relative;
+	background:url(../img/feedback/bg.jpg) no-repeat center;
+	background-size: cover;
+	&-prev-btn{
+		left: -4rem;
+
+	}
+	&-text{
+		position:relative;
+		margin-top:2rem;
+		padding:1rem;
+		border:2px solid @icons;
+		font-style:italic;
+		&::before{
+			margin-left: 4rem;
+			content:'';
+			position:absolute;
+			top:-2rem;
+			width:2rem;
+			height:2rem;
+			background-color: @icons;
+			border:2px solid @icons;
+			background-color: @light;
+			border-bottom: none;
+			border-top-right-radius: 100px;
+		}
+	}
+	&-next-btn{
+		right: -4rem;
+	}
+	&-slider{
+		.media{
+			margin-top: 3rem;
+			h4{
+				.bold();
+				font-size: 1.4rem;
+			}
+		}
+		p{
+			font-size: 1.6rem;
+		}
+		padding:5rem 6rem;
+		background-color: @light;
+		box-shadow: 6px 10px 18px 0px rgba(0, 0, 0, 0.11);
+	&-btn{
+		position: absolute;
+		top:50%;
+		transform: translateY(-50%);
+		width:4rem;
+		height: 5rem;
+		background-color: @icons;
+		border:none;
+		img{
+			width:50%;
+
+		}
+	}
+	}
+	&-form{
+		h3{
+			margin-bottom:1rem;
+			font-size: 2.2rem;
+			.bold();
+		}
+		padding:4rem 10rem;
+		margin-top:6rem;
+		background-color: @light;
+		text-align:center;
+		label{
+			transform:translate(-50%,8px)
+		}
+	}
+	&-btn{
+		max-width:30rem;
+	}
+}
+.hand{
+	position:absolute;
+	bottom:0;
+	left:0;
+	max-width:30rem;
+}
+/*Схема работы*/
+.scheme{
+	background:#fff url(../img/scheme/scheme-bg.png) bottom -10rem right -15rem no-repeat;
+	background-size: 65rem;
+	&-block{
+		min-height:30rem;
+	}
+	h3{
+		font-size: 2rem;
+		.bold();
+	}
+}
+/*Все на 100% включено*/
+.all-inclusive{
+	background: @bg-light;
+	.media{
+		min-height:9rem;
+		h4{
+			.bold();
+			font-size: 1.6rem;
+		}
+		font-size: 1.1rem;
+	}
+}
+.circle{
+	display:inline-block;
+	background: @icons;
+	width:100%;
+	height: 100%;
+	border-radius:50%;
+	&-border{
+		font-size: 1.9rem;
+		.bold();
+		color:@light;
+		padding: 0.3rem;
+		display:inline-block;
+		width:5rem;
+		height: 5rem;
+		border-radius:50%;
+		border:2px solid @icons;
+		text-align:center;
+		line-height:4rem;
+	}
+}
+/*Мы развеем все опасения*/
+.problems{
+	position:relative;
+	&-women{
+		position:absolute;
+		bottom:0;
+		left:50%;
+		width:30rem;
+		margin-left: -19rem;
+	}
+	&-list{
+		&_bad{
+			ul li:before{
+				background:url(../img/icons/cancel.png) center no-repeat;
+				background-size:70%;
+			}
+			border-color: @problems-color;
+			h4{
+				opacity: 0.5;
+			}
+		}
+		border: 4px solid;
+		padding:2rem;
+		min-height:40rem;
+		margin-bottom:2rem;
+		h4{
+			font-size: 2.1rem;
+			.bold()
+		}
+		ul{
+			padding-left:0;
+			padding-top: 2rem;
+			li{
+				position:relative;
+				padding-left: 3.5rem;
+				&:before{
+				position:absolute;
+				left:0;
+				top:50%;
+				transform: translateY(-50%);
+				content:'';
+				width:3rem;
+				height: 3rem;
+				display:inline-block;
+			}
+				margin-bottom:3rem;
+			}
+			list-style:none;
+		}
+		&_good{
+			ul li:before{
+				background:url(../img/icons/agree.png) center no-repeat;
+				background-size:70%;
+			}
+		}
+	}
+}
 /*Media*/
+@media(max-width: 1190px){
+	.feedback{
+		&-form{
+			padding:3rem 5rem;
+		}
+		.fotorama{
+			margin-bottom:3rem;
+		}
+	}
+	.all-inclusive{
+		.media{
+			min-height:11rem;
+			
+	}
+	.problems{
+		&-list{
+			min-height:40rem;
+		}
+	}
+}
 @media (max-width: 991px){
 	.price{
 		&-header-btn{
@@ -365,6 +575,14 @@ section{
 			text-align:center;
 			padding: 2rem 0;
 
+		}
+	}
+	.problems{
+		&-list{
+			min-height:auto;
+		}
+		&-women{
+			display:none;
 		}
 	}
 	.section-header_light{
@@ -383,10 +601,42 @@ section{
 	.main-content{
 		margin-top:3rem;
 	}
+	.feedback{
+		&-form{
+			label{
+				transform:translate(-50%,-50%)
+
+				
+			}
+		}
+	}
+	.hand{
+		display:none;
+	}
 }
+
 @media(max-width:767px){
+	.feedback{
+		&-prev-btn{
+				left: 0;
+
+			}
+		&-next-btn{
+				right: 0;
+			}
+	}
+	.main{
+	&-form-btn{
+		font-size: 1.2rem;
+	}
+		&-title{
+			h1{
+			font-size: 2.6rem;
+			}
+		}
+	}
 	.header{
-		text-align:center
+		text-align:center;
 	}
 	.wrap-block{
 		text-align:center;
@@ -394,6 +644,20 @@ section{
 	.phone-block{
 		text-align:center;
 	}
+	.scheme{
+		background: none;
+		text-align:center;
+		&-block{
+			margin-bottom:5rem;
+			min-height:20rem;
+		}
+	}
+}
+.problems{
+	&-women{
+		display:none;
+	}
+}
 }
 
 

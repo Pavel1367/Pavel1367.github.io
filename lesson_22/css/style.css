@@ -1,0 +1,49 @@
+img {
+	float: left;
+	margin-right: 20px;
+	margin-top: 40px;
+}
+
+.logo-text {
+	display: inline-block;
+	margin-top: 40px;
+	font-size: 16px;
+}
+
+.two {
+	display: inline-block;
+	margin-top: 40px;
+	color: #666666;
+	font-size: 16px;
+	text-align: center;
+}
+.three {
+	margin-top: 40px;
+	font-weight: 900;
+	font-size: 22px;
+	text-align: right;
+}
+.four {
+	font-weight: 700;
+	font-size: 14px;
+	text-align: right;
+} 
+.contacts {
+	position: absolute;
+	top: -405px;
+	height: 400px;
+	width: 100%;
+	background-color: #c60b0b;
+	color: #f0bec1;
+	padding-top: 25px;
+}
+h1 {
+	font-size: 30px;
+}
+.contacts p{
+margin-top: 40px;
+font-size: 16px;
+}
+.underline {
+text-decoration : underline;
+}

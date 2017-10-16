@@ -10,5 +10,8 @@
 [Урок 17](https://pavel1367.github.io/lesson_17/)
 [Урок 18](https://pavel1367.github.io/lesson_18/)
 [Урок 18-табы](https://pavel1367.github.io/lesson_18_form/)
+[Урок видео-фон](https://pavel1367.github.io/lesson_20/)
+[Урок 21](https://pavel1367.github.io/lesson_21/)
+[Уолк 22](https://pavel1367.github.io/lesson_22/)
 
 
